@@ -11,8 +11,10 @@ $color-grey-form: hsl(220, 3%, 82%);
 $border-blue: hsl(216, 85%, 28%);
 
 //Importar Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+// @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 // Importar partial _fonts
 @import './_fonts.scss';

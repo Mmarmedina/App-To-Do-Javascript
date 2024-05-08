@@ -1,5 +1,5 @@
 
-import { nanoid } from './node_modules/nanoid/nanoid.js'
+import { nanoid } from '../../node_modules/nanoid/nanoid.js'
 
 //* Seleccionar los elementos del DOM.
 // Seleccionar form que añade nuevas tareas. 
