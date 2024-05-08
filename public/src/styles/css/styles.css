@@ -11871,15 +11871,17 @@ div {
 input {
   display: block;
   width: 100%;
+  height: 1.8rem;
 }
 
-input, select, button {
+select {
   height: 1.8rem;
+  width: 12rem;
 }
 
 /* Mensaje de advertencia en caso de error */
 /* Que al pinchar en el input y ponerlo en foco no salga una línea negra. */
-input:focus {
+input:focus, select:focus {
   outline: none;
 }
 
@@ -11888,6 +11890,7 @@ button {
   background-color: hsl(0, 1%, 17%);
   color: hsl(0, 0%, 100%);
   width: 4.5rem;
+  height: 1.8rem;
 }
 
 button:hover {
@@ -11922,7 +11925,7 @@ form.create-task {
   gap: 1rem;
   margin: 1rem 0;
   padding: 1.2rem;
-  border: solid 1.3px hsla(0, 1%, 17%, 0.736);
+  border: solid 1.3px hsl(0, 1%, 17%);
   border-radius: 10px;
 }
 
@@ -11934,7 +11937,7 @@ form.filter-task {
   gap: 0.8rem;
   padding: 1.2rem;
   margin: 1rem 0;
-  border: solid 1.3px hsla(0, 1%, 17%, 0.736);
+  border: solid 1.3px hsl(0, 1%, 17%);
   border-radius: 10px;
 }
 
@@ -11944,7 +11947,7 @@ section.list-tasks {
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.3rem;
-  border: solid 1.3px hsla(0, 1%, 17%, 0.736);
+  border: solid 1.3px hsl(0, 1%, 17%);
   border-radius: 10px;
 }
 
@@ -11959,13 +11962,10 @@ article.task {
 
 /* Poner el borde del input rojo */
 .is-invalid {
-  border: 2px solid hsla(0, 86%, 65%, 0.6);
+  border: 1.3px solid hsla(0, 86%, 65%, 0.6);
   color: hsla(0, 86%, 65%, 0.6);
 }
 
 /* Poner el placeholder rojo y fuente más gruesa */
-input.is-invalid-placeholder-red::placeholder {
-  color: hsla(0, 86%, 65%, 0.6);
-}
 
 /*# sourceMappingURL=styles.css.map */

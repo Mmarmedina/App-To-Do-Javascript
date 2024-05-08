@@ -153,7 +153,7 @@ const checkEmptyInputAndGetValue = (input) => {
 //* Función para crear mensaje de alerta cuando le da a guardar sin escribir nada en el campo "nueva tarea".
 const createAlertBootstrap = (mensaje = 'Rellena el campo vacío', color = 'danger') => {
     const alertHTML = document.createElement('div')
-    alertHTML.className = `alert alert-${color} alert-dismissible shadow position-absolute start-50 top-50 translate-middle-x w-50`
+    alertHTML.className = `alert alert-${color} alert-dismissible shadow position-absolute start-50 top-50 translate-middle-x w-50 small`
     alertHTML.innerHTML = `
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     <div>${mensaje}</div>    `
@@ -201,7 +201,7 @@ const handleSubmit = (event) => {
 
     // Si deja en blanco el campo se corta la función.
     if (nameTask === null){
-        createAlertBootstrap('Escribe tu tarea 😊', 'danger')
+        createAlertBootstrap('Añade tu tarea 😊', 'secondary')
         return
     }
 
