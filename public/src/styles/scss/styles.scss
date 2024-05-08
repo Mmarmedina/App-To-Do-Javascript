@@ -30,9 +30,17 @@ body {
     overflow-x: hidden;  
 }
 
+/* Estilos por defecto para dispositivos móviles */
 .container {
-    width: 80%;
+    width: 90%;
     font-size: 0.8rem;
+}
+
+/* Consulta de medios para dispositivos con una resolución más grande */
+@media (min-width: 768px) {
+    .container {
+        width: 50%;
+    }
 }
 
 div {
