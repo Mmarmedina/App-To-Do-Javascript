@@ -1,4 +1,82 @@
-<!doctype html>
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <link rel="icon" href="./src/assets/img/favicon.svg"> -->
+        <link rel="stylesheet" href="./styles/css/reset.css">        
+        <link rel="stylesheet" href="./styles/css/styles.css">
+               
+        <title>App To-Do's</title>
+    </head>
+
+    <body>
+      <div class="container">
+        <h1 class="fw-bold">App To-Do's</h1>
+        <h2 class="text-center h3 fw-bold">Un lugar para todas tus tareas</h2>
+        <p class="text-center">Planea todas tus tareas en un único sitio. Accede a ellas desde cualquier parte y en cualquier dispositivo.</p>
+        <form class="create-task">
+          <div>
+              <input id="writeTask" class="writeTask" type="text" name= "writeTask" placeholder="Escribe aquí tu tarea">
+          </div>
+
+          <div>
+            <select id="priority" name="priority" title="Priority">
+              <option value="urgent">Urgente</option>
+              <option value="intermediate">Intermedia</option>
+              <option value="normal">Normal</option>
+            </select>
+          </div>
+            
+          <button class="save" type="submit" name="save">Guardar</button>
+        </form>
+
+        <form class="filter-task">          
+          <select id="Frecuency" name="frecuency" title="frecuency">
+            <option id ="allTasks" value="allTasks">Todas las tareas</option>
+            <option value="urgent">Urgente</option>
+            <option value="intermediate">Intermedia</option>
+            <option value="normal">Normal</option>
+          </select>            
+
+          <div class="search">
+            <input id="search" type="search" name="search" placeholder="Busca tu tarea">
+          </div>          
+        </form>
+
+        <section class="list-tasks">
+        </section>
+      </div>
+
+      <footer>
+          <p class="fw-bold">App To-Do's - @mmarmedina</p>
+      </footer>   
+      
+      <script src="./main.js" type="module"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,4 +88,4 @@
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
   </body>
-</html>
+</html> -->
