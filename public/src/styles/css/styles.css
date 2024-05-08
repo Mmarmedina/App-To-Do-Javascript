@@ -11881,7 +11881,7 @@ button {
 }
 
 button:hover {
-  background-color: hsl(216, 85%, 28%);
+  background-color: hsla(0, 1%, 17%, 0.736);
   color: hsl(0, 0%, 100%);
 }
 
@@ -11904,7 +11904,7 @@ form.create-task {
   gap: 1rem;
   margin: 1rem 0;
   padding: 1.2rem;
-  border: solid 2px hsl(216, 85%, 28%);
+  border: solid 2px hsla(0, 1%, 17%, 0.736);
   border-radius: 10px;
 }
 
@@ -11916,7 +11916,7 @@ form.filter-task {
   gap: 0.8rem;
   padding: 1.2rem;
   margin: 1rem 0;
-  border: solid 2px hsl(216, 85%, 28%);
+  border: solid 2px hsla(0, 1%, 17%, 0.736);
   border-radius: 10px;
 }
 
@@ -11926,7 +11926,7 @@ section.list-tasks {
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.2rem;
-  border: solid 2px hsl(216, 85%, 28%);
+  border: solid 2px hsla(0, 1%, 17%, 0.736);
   border-radius: 10px;
 }
 
