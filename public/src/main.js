@@ -1,6 +1,4 @@
-
 import { nanoid } from '../../node_modules/nanoid/nanoid.js'
-// import { allTasks } from '../db/task.db.js'
 
 //* Seleccionar los elementos del DOM.
 // Seleccionar form que añade nuevas tareas. 
@@ -32,6 +30,7 @@ console.log (searchInput)
 //     }   
 // }
 
+//* LocalStorage con tareas por defecto
 let allTasks = [
     {
         id: nanoid(),
@@ -50,21 +49,11 @@ let allTasks = [
     },
 ];
 
-console.log (allTasks)
-
 const getTasksFromLocalStorage = () => {
-
     const data = window.localStorage.getItem('allTasks')
     console.log (allTasks)
-
-    // if (localStorage.getItem('allTasks') != null) {
-    //     allTasks = JSON.parse(localStorage.getItem('allTasks'))
-    // }
-    // console.log (allTasks)
     printTasks(allTasks)
 }
-
-
 
 //* Cada vez que metamos una tarea nueva o eliminemos tarea, hay que actualizar el localStorage.
 const updateTaskToLocalStorage = () => {
@@ -301,6 +290,4 @@ selectFilter.addEventListener('change', handleSearchFilter)
 searchInput.addEventListener ('input', handleSearchFilter)
 
 getTasksFromLocalStorage()
-// printTasks(allTasks)
-
 

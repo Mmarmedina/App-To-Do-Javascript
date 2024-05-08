@@ -1,17 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- <link rel="icon" href="./src/assets/img/favicon.svg"> -->
+        <link rel="icon" href="./public/src/assets/javascript.svg">
         <link rel="stylesheet" href="./public/src/styles/css/reset.css">        
         <link rel="stylesheet" href="./public/src/styles/css/styles.css">
                
         <title>App To-Do's</title>
     </head>
-
     <body>
       <div class="container">
         <h1 class="fw-bold">App To-Do's</h1>
@@ -19,7 +17,8 @@
         <p class="text-center">Planea todas tus tareas en un único sitio. Accede a ellas desde cualquier parte y en cualquier dispositivo.</p>
         <form class="create-task">
           <div>
-              <input id="writeTask" type="text" name= "writeTask" placeholder="Añade aquí tu tarea">
+            <p class="fw-bold">Añade tu tarea y elige su prioridad</p>  
+            <input id="writeTask" type="text" name= "writeTask" placeholder="Añade aquí tu tarea">
           </div>
           <div>
             <select id="priority" name="priority" title="Priority">
@@ -28,12 +27,11 @@
               <option value="normal">Normal</option>
             </select>
           </div>
-            
           <button class="save" type="submit" name="save">Guardar</button>
         </form>
-
         <form class="filter-task">          
           <div>
+            <p class="fw-bold">¿No encuentras una tarea?</p>  
             <input id="search" type="search" name="search" placeholder="Busca tu tarea">
           </div> 
           <select id="Frecuency" name="frecuency" title="frecuency">
@@ -43,46 +41,12 @@
             <option value="normal">Normal</option>
           </select>            
         </form>
-
         <section class="list-tasks">
         </section>
       </div>
       <footer>
           <p class="fw-bold">App To-Do's - @mmarmedina</p>
-      </footer>   
-      
+      </footer>
       <script src="./public/src/main.js" type="module"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
-</html> -->
