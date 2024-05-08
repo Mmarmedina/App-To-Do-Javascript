@@ -12,8 +12,6 @@ $border-blue: hsl(216, 85%, 28%);
 
 //Importar Bootstrap
 @import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
-// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-// @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 @import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 // Importar partial _fonts
@@ -21,11 +19,12 @@ $border-blue: hsl(216, 85%, 28%);
 
 // CSS personalizado
 body {
-    overflow-x: hidden;    
+    overflow-x: hidden;  
 }
 
 .container {
-    width: 80%; 
+    width: 80%;
+    font-size: 0.8rem;
 }
 
 h1 {
@@ -37,10 +36,6 @@ input, select, button {
     height: 1.8rem;
 }
 
-input::placeholder {
-    font-size: 0.8rem;
-}
-
 /* Mensaje de advertencia en caso de error */
 /* Que al pinchar en el input y ponerlo en foco no salga una línea negra. */
 input:focus{
@@ -48,7 +43,6 @@ input:focus{
 }
 
 button {
-    font-size: 0.8rem;
     border: none;
     background-color: $info;
     width: 4.5rem;    ;
@@ -57,10 +51,6 @@ button {
 button:hover {
     background-color: $border-blue;
     color: $secondary;
-}
-
-select {
-    font-size: 0.8rem;
 }
 
 footer {
@@ -114,12 +104,10 @@ article.task {
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    width: 100%;
-    font-size: 0.8rem;      
+    width: 100%;   
 }
 
 article p {
-    font-size: 0.8rem;
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
