@@ -4,9 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
-@import '../../../../node_modules//bootstrap-icons/font/bootstrap-icons.css';
-/* @import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css'; */
+@import '../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 :root,
 [data-bs-theme=light] {
@@ -11858,6 +11856,7 @@ body {
 
 .container {
   width: 80%;
+  font-size: 0.8rem;
 }
 
 h1, .h1 {
@@ -11869,10 +11868,6 @@ input, select, button {
   height: 1.8rem;
 }
 
-input::placeholder {
-  font-size: 0.8rem;
-}
-
 /* Mensaje de advertencia en caso de error */
 /* Que al pinchar en el input y ponerlo en foco no salga una línea negra. */
 input:focus {
@@ -11880,7 +11875,6 @@ input:focus {
 }
 
 button {
-  font-size: 0.8rem;
   border: none;
   background-color: hsl(208, 97%, 87%);
   width: 4.5rem;
@@ -11889,10 +11883,6 @@ button {
 button:hover {
   background-color: hsl(216, 85%, 28%);
   color: hsl(0, 0%, 100%);
-}
-
-select {
-  font-size: 0.8rem;
 }
 
 footer {
@@ -11947,11 +11937,9 @@ article.task {
   align-items: center;
   padding: 0 1rem;
   width: 100%;
-  font-size: 0.8rem;
 }
 
 article p {
-  font-size: 0.8rem;
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
