@@ -8,8 +8,7 @@ $warning: hsl(58, 100%, 80%);
 $border: hsla(0, 1%, 17%, 0.736);
 
 // Color personalizados
-$color-grey-form: hsl(220, 3%, 82%);
-$border-blue: hsl(216, 85%, 28%);
+$color-grey-form: hsl(210, 4%, 91%);
 
 //Importar Bootstrap
 @import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -64,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: $success;
+    background-color: $color-grey-form;
     color: $primary;
 }
 
