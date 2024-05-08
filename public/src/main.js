@@ -1,5 +1,6 @@
 
 import { nanoid } from '../../node_modules/nanoid/nanoid.js'
+// import { allTasks } from '../db/task.db.js'
 
 //* Seleccionar los elementos del DOM.
 // Seleccionar form que añade nuevas tareas. 
@@ -18,17 +19,52 @@ console.log (selectFilter)
 const searchInput = document.getElementById('search')
 console.log (searchInput)
 
-let allTasks
+// * LocalStorage sin datos al cargar
+// let allTasks
 
-//* LocalStorage
-const getTasksFromLocalStorage = () => {  
-    // Si en el localStore no hay nada que hay se guarde un array vacío (no null). 
-    if (localStorage.getItem('allTasks') === null) {
-        allTasks = []
-    }else{
-        allTasks = JSON.parse(localStorage.getItem('allTasks'))
-    }   
+// const getTasksFromLocalStorage = () => {  
+//     Si en el localStore no hay nada que hay se guarde un array vacío (no null). 
+
+//     if (localStorage.getItem('allTasks') === null) {
+//         allTasks = []
+//     }else{
+//         allTasks = JSON.parse(localStorage.getItem('allTasks'))
+//     }   
+// }
+
+let allTasks = [
+    {
+        id: nanoid(),
+        task: 'Ir a la farmacia a recoger las medicinas', 
+        priority: 'intermediate',
+    },
+    {
+        id: nanoid(),
+        task: 'Hacer la compra de la semana si quiero comer', 
+        priority: 'urgent',
+    },
+    {
+        id: nanoid(),
+        task: 'Llamar a mi amigo para decirle lo guapo que es', 
+        priority: 'normal',
+    },
+];
+
+console.log (allTasks)
+
+const getTasksFromLocalStorage = () => {
+
+    const data = window.localStorage.getItem('allTasks')
+    console.log (allTasks)
+
+    // if (localStorage.getItem('allTasks') != null) {
+    //     allTasks = JSON.parse(localStorage.getItem('allTasks'))
+    // }
+    // console.log (allTasks)
+    printTasks(allTasks)
 }
+
+
 
 //* Cada vez que metamos una tarea nueva o eliminemos tarea, hay que actualizar el localStorage.
 const updateTaskToLocalStorage = () => {
@@ -265,6 +301,6 @@ selectFilter.addEventListener('change', handleSearchFilter)
 searchInput.addEventListener ('input', handleSearchFilter)
 
 getTasksFromLocalStorage()
-printTasks(allTasks)
+// printTasks(allTasks)
 
 
