@@ -100,9 +100,9 @@ const colorTask = (taskpriority, taskHTML)=> {
 
     // Colores
     const colors = {
-        colorUrgentTask: 'hsla(352, 76%, 48%, 0.732)',
-        colorIntermediateTask: 'hsla(42, 95%, 57%, 0.755)',
-        colorNormalTask: 'hsla(127, 59%, 73%, 0.88)'
+        colorUrgentTask: 'hsl(0, 86%, 65%, 0.600)',
+        colorIntermediateTask: 'hsl(58, 100%, 80%)',
+        colorNormalTask: 'hsla(127, 59%, 73%, 0.40)'
     }
 
     // Según la prioridad se pone la tarea de un color, usando el siguiente condicional. 
@@ -267,28 +267,4 @@ searchInput.addEventListener ('input', handleSearchFilter)
 getTasksFromLocalStorage()
 printTasks(allTasks)
 
-// import './style.css'
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
-
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vitejs.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
-
-// setupCounter(document.querySelector('#counter'))
 
