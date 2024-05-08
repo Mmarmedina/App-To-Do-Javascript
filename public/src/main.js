@@ -226,7 +226,7 @@ const handleSubmit = (event) => {
 
     // Si deja en blanco el campo se corta la función.
     if (nameTask === null){
-        createAlertBootstrap('Añade tu tarea 😊', 'secondary')
+        createAlertBootstrap('Añade tu tarea', 'secondary')
         return
     }
 
